@@ -1,6 +1,3 @@
-var increase_x1_Element = document.getElementById("increase_x1");
-var increase_x2_Element = document.getElementById("increase_x2");
-
 var xoff1 = 0;
 var xoff2 = 10000;
 
@@ -16,8 +13,6 @@ var point2 = {
 
 function setup(){
     createCanvas(400, 400);
-    increase_x1_Element.value = 0.01;
-    increase_x2_Element.value = 0.02;
 
 }
 
