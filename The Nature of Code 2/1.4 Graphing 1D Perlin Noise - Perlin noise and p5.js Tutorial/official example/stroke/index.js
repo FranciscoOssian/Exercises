@@ -23,7 +23,7 @@ function draw(){
 
     for (var x = 0; x < width; ++x){
         stroke(255);
-        var y = sin(xoff)*height;
+        var y = noise(xoff)*height;
         vertex(x, y);
 
         xoff += inc;
