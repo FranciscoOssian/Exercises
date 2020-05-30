@@ -1,7 +1,7 @@
 var xoff1 = 0;
 var xoff2 = 100;
 
-var inc = 0.01;
+var inc = 0.5;
 var start = 0;
 
 function setup(){
@@ -21,9 +21,9 @@ function draw(){
 
     var xoff = start;
 
-    for (var x = 0; x < width; ++x){
+    for (var x = 0; x < width; x=x+9){
         stroke(255);
-        var y = sin(xoff)*height;
+        var y = noise(xoff)*height;
         vertex(x, y);
 
         xoff += inc;

@@ -23,7 +23,7 @@ function draw(){
 
     for (var x = 0; x < width; ++x){
         stroke(255);
-        var y = sin(xoff)*height;
+        var y = height/2 + sin(xoff) * height/2;
         vertex(x, y);
 
         xoff += inc;
